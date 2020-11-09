@@ -1,19 +1,26 @@
 .order {
-    padding: 40px;
-    margin: 20px 0;
-    border: 1px solid lightgray;
-    background-color: white;
-    position: relative;
+  padding: 40px;
+  margin: 20px 0;
+  background-color: white;
+  border: 1px solid lightgray;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 10px lightgray;
 }
 
 .order__id {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-  }
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
 
 .order__total {
-    font-weight: 500;
-    text-align: right;
-  }
-  
+  font-weight: 500;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.order__datetime {
+  border-bottom: 1px solid lightgray !important;
+  padding-bottom: 10px;
+}
