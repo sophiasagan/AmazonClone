@@ -1,69 +1,163 @@
+.headerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.8);
+}
+
 .header {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #131921;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  
-  .header__logo {
-    width: 100px;
-    object-fit: contain;
-    margin: 0 20px;
-    margin-top: 18px;
-  }
-  
-  .header__search {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    border-radius: 24px;
-  }
-  
-  .header__searchInput {
-    height: 12px;
-    padding: 10px;
-    border: none;
-    width: 100%;
-  }
-  
-  .MuiSvgIcon-root {
-    padding: 5px;
-    height: 22px !important;
-    background-color: #cd9042;
-  }
-  
-  .header__optionLineOne {
-    font-size: 10px;
-  }
-  
-  .header__optionLineTwo {
-    font-size: 13px;
-    font-weight: 800;
-  }
-  
-  .header__optionBasket {
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-  
-  .header__basketCount {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .header__nav {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .header__option {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
-  }
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline-color: #cd9042;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #febd69;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.header__searchIcon:hover {
+  background-color: #faae4b;
+}
+
+.header__optionLineOne {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.header__optionLineTwo {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.headerTwo {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  background-color: #232f3e;
+  color: white;
+  overflow: hidden;
+}
+
+.headerTwo__deliver {
+  display: flex;
+}
+
+.headerTwo__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.headerTwo__optionLineOne {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.headerTwo__optionLineTwo {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.headerTwo__deliverIcon {
+  margin-top: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.headerTwo__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerTwo__item {
+  font-size: 14px;
+  margin-left: 30px;
+  cursor: pointer;
+  padding-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.headerTwo__item:hover {
+  text-decoration: underline;
+}
