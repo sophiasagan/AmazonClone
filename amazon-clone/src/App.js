@@ -11,6 +11,7 @@ import Payment from "./Payment";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Orders from "./Orders";
+import Footer from "./Footer";
 
 const promise = loadStripe(
   "pk_test_51HlPYyLyVaFzAszhcGYNp4mf0K7xD9bS2dt0UOEuS82hRoO8uQxEiEonWmmMiGueOqHBh6tQ7p8WzrWM4bfCAqsj00dOSlWY83"
@@ -44,11 +45,12 @@ function App() {
   return (
     //BEM convention for styling
     <Router>
-      <div className="app">
+      <div className="app" id="app">
         <Switch>
           <Route path="/orders">
             <Header />
             <Orders />
+            <Footer />
           </Route>
           <Route path="/login">
             <Login />
@@ -56,16 +58,19 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+            <Footer />
           </Route>
           <Route path="/payment">
             <Header />
             <Elements stripe={promise}>
               <Payment />
             </Elements>
+            <Footer />
           </Route>
           <Route path="/">
             <Header />
             <Home />
+            <Footer />
           </Route>
         </Switch>
       </div>
