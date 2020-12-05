@@ -14,4 +14,4 @@
 ![](cartamazon2.PNG)
 
 ### Stripe Payment API
-![](stripe.PNG)
+![](stripe2.PNG)
